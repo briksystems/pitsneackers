@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pitsneakers — Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Titan+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js" crossorigin></script>
+<style>
+  body { margin: 0; }
+  #root:empty::after {
+    content: "Si esto no cambia en unos segundos, revisa la consola del navegador (F12) — puede que un bloqueador de anuncios o el internet esté impidiendo cargar React o Tailwind desde su CDN.";
+    display:block; padding: 24px; font-family: sans-serif; color:#6B6B6B; max-width: 480px; margin: 40px auto; text-align:center;
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<!-- products.js trae el catálogo (esto sí lo editas). app.js es el motor de la página (no lo toques). -->
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
