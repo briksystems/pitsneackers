@@ -1,0 +1,92 @@
+PITSNEAKERS — INSTRUCCIONES
+=================================
+
+QUÉ HAY EN ESTA CARPETA
+-------------------------
+- index.html      → el esqueleto de la página. NO LO TOQUES.
+- app.js           → el motor de la tienda (filtros, panel interno, etc). NO LO TOQUES.
+- products.js      → LA LISTA DE PRODUCTOS. Este SÍ lo editas.
+- tiles.js         → LAS FOTOS DE LOS TILES DE INICIO (Nike, Jordan, SB, Travis
+                     Scott, etc). Este SÍ lo editas.
+- images/          → carpeta con las fotos. Aquí agregas o quitas fotos.
+
+En resumen: para agregar o quitar zapatos, o cambiar las fotos de los tiles
+de inicio, solo tocas "products.js", "tiles.js" y la carpeta "images".
+Nunca necesitas abrir ni entender index.html o app.js.
+
+
+CÓMO SUBIRLO A GITHUB (la primera vez)
+-------------------------------------
+1. Entra a github.com y crea una cuenta si no tienes.
+2. Arriba a la derecha, el ícono "+" → "New repository".
+3. Ponle un nombre (ej. "pitsneakers-web"), déjalo en "Public", y dale
+   "Create repository" (no marques nada más).
+4. En la página del repo: "Add file" → "Upload files".
+5. Arrastra TODOS los archivos y la carpeta "images" completa (los 5
+   elementos: index.html, app.js, products.js, tiles.js, images).
+6. Baja y dale "Commit changes".
+7. Ve a "Settings" (pestaña de arriba) → "Pages" (menú de la izquierda).
+8. En "Source" selecciona la rama "main" y la carpeta "/ (root)" → "Save".
+9. Espera 1-2 minutos y recarga esa misma página: ahí te aparece el link
+   público, algo como https://tu-usuario.github.io/pitsneakers-web/
+
+
+CÓMO AGREGAR UN ZAPATO NUEVO (después de la primera subida)
+-------------------------------------------------------------
+1. Si tienes la foto: en tu repo de GitHub entra a la carpeta "images",
+   dale "Add file" → "Upload files", y sube la foto.
+2. Abre "products.js" en GitHub (haz clic en el archivo) y dale al ícono
+   del lápiz (✏️) arriba a la derecha para editarlo.
+3. Copia uno de los bloques que empieza con "{" y termina con "},",
+   pégalo justo antes del "];" del final, y cambia los datos (marca,
+   modelo, talla, precio, etc). El archivo trae la explicación de cada
+   campo en los comentarios de arriba.
+4. En el campo "imagen" escribe: "images/nombre-del-archivo.jpg"
+   (el mismo nombre que le pusiste a la foto que subiste en el paso 1).
+   Si todavía no tienes foto, deja "imagen": "".
+5. Abajo, dale "Commit changes".
+6. Espera uno o dos minutos y recarga la página pública — ya debería
+   aparecer.
+
+
+CÓMO QUITAR UN ZAPATO
+-----------------------
+1. Abre "products.js" en GitHub, edítalo (ícono del lápiz).
+2. Busca el bloque de ese par (empieza con "{" y termina con "},") y
+   bórralo completo.
+3. Dale "Commit changes".
+
+
+COSAS IMPORTANTES QUE DEBES SABER
+------------------------------------
+- Para cambiar la foto de un tile de inicio (Nike, Jordan, SB, Travis
+  Scott, etc), edita "tiles.js" — trae instrucciones en los comentarios
+  de arriba, incluida la regla de qué fotos sí puedes usar (fotos tuyas
+  de pares reales) y cuáles no (logos oficiales, fotos de estudio/
+  publicidad encontradas en internet).
+- La página de inicio ahora es una vitrina (encabezado + tiles de marcas).
+  El catálogo de verdad (con filtros y las tarjetas de producto) se abre
+  en una ventana emergente blanca al hacer clic en cualquier tile o en el
+  botón "Ver catálogo completo".
+- Dentro del catálogo, los filtros de precio y talla están escondidos
+  detrás de un botón "Filtros" para no saturar la vista.
+- La página ahora solo muestra 3 marcas (Jordan, Nike, Adidas) como tiles
+  grandes/chicos arriba del catálogo, con foto de fondo — como el ejemplo
+  que mandaste. Los tiles de "Adidas", "J Balvin" y "Nigel Sylvester" se
+  ven en un color sólido porque todavía no tienen foto — en cuanto agregues
+  un producto de esa categoría con foto en products.js, se verá igual.
+- Cada producto tiene un campo "verificado" (true o false). Si es true, se
+  ve el sello teal "PITS" y no se cobra nada extra. Si es false, no se ve
+  el sello y la página avisa que faltan $20.000 por verificar ese par.
+- El PIN del "Panel interno" (para marcar ventas y ver el stock) es: 2026
+- Cuando usas el Panel interno para marcar un par como vendido o agregar
+  uno manualmente, eso se guarda solo en el navegador de esa persona —
+  NO se escribe automáticamente en "products.js". Es decir: "products.js"
+  es tu catálogo "oficial" que subes a GitHub; el Panel interno es más
+  para llevar el control del día a día mientras prueban la página.
+- Si editas "products.js" y no ves los cambios reflejados, puede ser
+  porque tu navegador ya había guardado una versión anterior. Entra al
+  Panel interno (PIN 2026) y usa el botón "Recargar desde products.js"
+  para forzar la actualización.
+- Las fotos deben ser .jpg o .png. Entre más pesada la foto, más lento
+  carga la página — si puedes, que no pesen más de 1-2 MB cada una.
