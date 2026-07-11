@@ -36,12 +36,12 @@
    ========================================================================= */
 
 window.PITSNEAKERS_TILES = [
-  { label: "Jordan", image: "images/jordan1-lost-and-found.jpg", color: "#171817", brand: "Jordan" },
-  { label: "Nike SB", image: "images/dunk-sb-jarritos.jpg", color: "#32A0AA", sb: true },
-  { label: "Travis Scott", image: "images/jordan1-travis-mocha-low.jpg", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
+  { label: "Jordan", image: "logo-jordan-brand.png", color: "#171817", brand: "Jordan" },
+  { label: "Nike SB", image: "logo-sb-brand.png", color: "#32A0AA", sb: true },
+  { label: "Travis Scott", image: "logo-travis-brand.png", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
   { label: "Nike", image: "", color: "#B9211A", brand: "Nike" },
   { label: "A Ma Manière", image: "images/jordan3-amamaniere-white.jpg", color: "#BDB3A8", brand: "Jordan", edition: "A Ma Maniere" },
-  { label: "J. Balvin", image: "images/jordan3-rio-balvin.jpg", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
+  { label: "J. Balvin", image: "logo-balvin-brand.png", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
   { label: "New Balance", image: "", color: "#EBEBEB", brand: "New Balance" },
   { label: "Converse", image: "", color: "#141512", brand: "Converse" },
   { label: "Adidas", image: "", color: "#315B8D", brand: "Adidas" },
