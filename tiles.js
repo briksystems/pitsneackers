@@ -20,6 +20,8 @@
    CÓMO CAMBIAR LA FOTO O EL COLOR DE UN CUADRO:
    1) Si es una foto tuya nueva: súbela a la carpeta "images/" (igual que
       en products.js), y escribe "images/nombre-del-archivo.jpg" abajo.
+      OJO: siempre debe empezar con "images/" — ese es justo el error
+      que tenía este archivo antes de este arreglo.
    2) Si todavía no tienes foto para ese cuadro, deja "image": "" — se ve
       con el color sólido de "color" y el nombre, sin romper nada.
    3) "color" es el fondo del cuadro cuando NO hay foto (o la capa de
@@ -27,7 +29,7 @@
 
    CAMPOS:
    - label: el texto que aparece sobre el cuadro
-   - image: la ruta de la foto (o "" si no hay)
+   - image: la ruta de la foto (o "" si no hay) — siempre "images/algo.jpg"
    - color: color de fondo en formato "#RRGGBB"
    - brand: a qué marca filtra al hacer clic
    - edition: (opcional, solo Jordan) a qué colaboración filtra
@@ -36,28 +38,16 @@
    ========================================================================= */
 
 window.PITSNEAKERS_TILES = [
-  { label: "Jordan", image: "logo-jordan-brand.png", color: "#171817", brand: "Jordan" },
-  { label: "Nike SB", image: "logo-sb-brand.png", color: "#32A0AA", sb: true },
-  { label: "Travis Scott", image: "logo-travis-brand.png", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
+  { label: "Jordan", image: "images/logo-jordan-brand.png", color: "#171817", brand: "Jordan" },
+  { label: "Nike SB", image: "images/logo-sb-brand.png", color: "#32A0AA", sb: true },
+  { label: "Travis Scott", image: "images/logo-travis-brand.png", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
   { label: "Nike", image: "", color: "#B9211A", brand: "Nike" },
   { label: "A Ma Manière", image: "images/jordan3-amamaniere-white.jpg", color: "#BDB3A8", brand: "Jordan", edition: "A Ma Maniere" },
-  { label: "J. Balvin", image: "logo-balvin-brand.png", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
+  { label: "J. Balvin", image: "images/logo-balvin-brand.png", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
   { label: "New Balance", image: "", color: "#EBEBEB", brand: "New Balance" },
   { label: "Converse", image: "", color: "#141512", brand: "Converse" },
   { label: "Adidas", image: "", color: "#315B8D", brand: "Adidas" },
   { label: "Asics", image: "", color: "#EFEDE9", brand: "Asics" },
   { label: "Vans", image: "", color: "#E4E4E2", brand: "Vans" },
   { label: "Yeezy", image: "", color: "#A59585", brand: "Yeezy" },
-];
-window.PITSNEAKERS_TILES_BIG = [
-  { label: "Nike", image: "images/dunk-sb-jarritos.jpg", brand: "Nike" },
-  { label: "Jordan", image: "images/jordan1-lost-and-found.jpg", brand: "Jordan" },
-  { label: "SB", image: "images/jordan4-sb-navy.jpg", sb: true },
-];
-
-window.PITSNEAKERS_TILES_SMALL = [
-  { label: "Travis Scott", image: "images/jordan1-travis-mocha-low.jpg", brand: "Jordan", edition: "Travis Scott" },
-  { label: "Adidas", image: "", brand: "Adidas" },
-  { label: "J Balvin", image: "images/jordan3-rio-balvin.jpg", brand: "Jordan", edition: "J Balvin" },
-  { label: "Nigel Sylvester", image: "", brand: "Jordan", edition: "Nigel Sylvester" },
 ];
