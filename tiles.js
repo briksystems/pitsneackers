@@ -38,14 +38,14 @@
    ========================================================================= */
 
 window.PITSNEAKERS_TILES = [
-  { label: "Jordan", image: "images/logo-jordan-brand.png", color: "#171817", brand: "Jordan" },
-  { label: "Nike SB", image: "images/logo-sb-brand.png", color: "#32A0AA", sb: true },
-  { label: "Travis Scott", image: "images/logo-travis-brand.png", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
-  { label: "Nike", image: "images/logo-nike-brand.png", color: "#B9211A", brand: "Nike" },
-  { label: "A Ma Manière", image: "images/logo-maniere-brand.png", color: "#BDB3A8", brand: "Jordan", edition: "A Ma Maniere" },
-  { label: "J. Balvin", image: "images/logo-balvin-brand.png", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
-  { label: "New Balance", image: "images/logo-new-balance-brand.png", color: "#EBEBEB", brand: "New Balance" },
-  { label: "Converse", image: "images/logo-converse-brand.png", color: "#141512", brand: "Converse" },
-  { label: "Adidas", image: "images/logo-adidas-brand.png", color: "#315B8D", brand: "Adidas" },
-  { label: "Asics", image: "images/logo-asics-brand.png", color: "#EFEDE9", brand: "Asics" },
+  { label: "", image: "images/logo-jordan-brand.png", color: "", brand: "Jordan" },
+  { label: "", image: "images/logo-sb-brand.png", color: "#32A0AA", sb: true },
+  { label: "", image: "images/logo-travis-brand.png", color: "#544934", brand: "Jordan", edition: "Travis Scott" },
+  { label: "", image: "images/logo-nike-brand.png", color: "#B9211A", brand: "Nike" },
+  { label: "", image: "images/logo-maniere-brand.png", color: "#BDB3A8", brand: "Jordan", edition: "A Ma Maniere" },
+  { label: "", image: "images/logo-balvin-brand.png", color: "#C5DACC", brand: "Jordan", edition: "J Balvin" },
+  { label: "", image: "images/logo-new-balance-brand.png", color: "#EBEBEB", brand: "New Balance" },
+  { label: "", image: "images/logo-converse-brand.png", color: "#141512", brand: "Converse" },
+  { label: "", image: "images/logo-adidas-brand.png", color: "#315B8D", brand: "Adidas" },
+  { label: "", image: "images/logo-asics-brand.png", color: "#EFEDE9", brand: "Asics" },
 ];
