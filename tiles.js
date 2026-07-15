@@ -48,6 +48,4 @@ window.PITSNEAKERS_TILES = [
   { label: "Converse", image: "images/logo-converse-brand.png", color: "#141512", brand: "Converse" },
   { label: "Adidas", image: "images/logo-adidas-brand.png", color: "#315B8D", brand: "Adidas" },
   { label: "Asics", image: "images/logo-asics-brand.png", color: "#EFEDE9", brand: "Asics" },
-  { label: "Vans", image: "", color: "#E4E4E2", brand: "Vans" },
-  { label: "Yeezy", image: "", color: "#A59585", brand: "Yeezy" },
 ];
